@@ -1,7 +1,6 @@
 # SoilMoistureSensing
-
-## Device Info
 -------------
+## Device Info
 本实验采用IWR6843isk开发板和DCA1000EVM采集卡，在mmWaveStudio平台上收集雷达数据，进行土壤湿度的检测。<br>
 IWR6843isk的工作频率为60GHz到64GHz，最多可以设置3发4收，实验里使用1发4收。<br>
 
