@@ -47,6 +47,6 @@ ar1.FrameConfig函数用于设置雷达帧的参数，例如帧的数目、一�
 **采集设备布置如下**<br>
 <img src="https://github.com/HIT-CY/SoilMoistureSensing/blob/master/Imag/%E8%AE%BE%E5%A4%871.jpg" width="300px"><br>
 
-土壤湿度为25.8%。
+土壤湿度采用谷物水分测定仪LDS-1G进行测量，测量误差在0.5%以内，湿度信息为25.8%。<br>
 
 ## Data Processing
