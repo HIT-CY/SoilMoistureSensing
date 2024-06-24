@@ -23,7 +23,7 @@ ar1.FrameConfig函数用于设置雷达帧的参数，例如帧的数目、一�
 
 **参数设置过程碰到的问题**<br>
 问题1：shell中显示adc_bin被占用<br>
-导致此问题的原因是对adc_bin文件同时进行读写的冲突<br>
+分析：导致此问题的原因是对adc_bin文件同时进行读写的冲突<br>
 解决方法：修改lua脚本中ar1.StartFrame()后面RSTD.Sleep()休眠的时间，使其长于雷达采集数据的时间，以实现采集完数据再执行ar1.StartMatlabPostProc函数，避免读写冲突<br>
 
 ## Experiment
