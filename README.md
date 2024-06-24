@@ -34,13 +34,14 @@ ar1.FrameConfig函数用于设置雷达帧的参数，例如帧的数目、一�
 <img src="https://github.com/HIT-CY/SoilMoistureSensing/blob/master/Imag/%E5%9C%9F%E5%A3%A41.jpg" width="300px"><br>
 
 **利用支架将雷达开发板和采集卡固定在土壤表面正上方50cm处，并保持雷达开发板水平垂直朝下，如图所示**<br>
-<img src="https://github.com/HIT-CY/SoilMoistureSensing/blob/master/Imag/%E6%80%BB%E8%A7%881.jpg" width="300px"><br>
-<img src="https://github.com/HIT-CY/SoilMoistureSensing/blob/master/Imag/%E6%80%BB%E8%A7%882.jpg" width="300px"><br>
-<img src="https://github.com/HIT-CY/SoilMoistureSensing/blob/master/Imag/%E6%80%BB%E8%A7%883.jpg" width="300px"><br>
+<img src="https://github.com/HIT-CY/SoilMoistureSensing/blob/master/Imag/%E6%80%BB%E8%A7%881.jpg" width="300px">
 <img src="https://github.com/HIT-CY/SoilMoistureSensing/blob/master/Imag/%E6%80%BB%E8%A7%884.jpg" width="300px"><br>
+<img src="https://github.com/HIT-CY/SoilMoistureSensing/blob/master/Imag/%E6%80%BB%E8%A7%882.jpg" width="300px">
+<img src="https://github.com/HIT-CY/SoilMoistureSensing/blob/master/Imag/%E6%80%BB%E8%A7%883.jpg" width="300px"><br>
+
 
 **俯视图如下**<br>
-<img src="https://github.com/HIT-CY/SoilMoistureSensing/blob/master/Imag/%E4%BF%AF%E8%A7%861.jpg" width="300px"><br>
+<img src="https://github.com/HIT-CY/SoilMoistureSensing/blob/master/Imag/%E4%BF%AF%E8%A7%861.jpg" width="300px">
 <img src="https://github.com/HIT-CY/SoilMoistureSensing/blob/master/Imag/%E4%BF%AF%E8%A7%862.jpg" width="300px"><br>
 
 **采集设备布置如下**<br>
