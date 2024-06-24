@@ -1,6 +1,7 @@
 # SoilMoistureSensing
-本实验旨在用FMCW雷达信号来对土壤的湿度信息进行测量。
 ===================================
+本实验旨在用FMCW雷达信号来对土壤的湿度信息进行测量。
+
 ## Device Info
 本实验采用IWR6843isk开发板和DCA1000EVM采集卡，在mmWaveStudio平台上收集雷达数据。<br>
 IWR6843isk的工作频率为60GHz到64GHz，最多可以设置3发4收，实验里使用1发4收。<br>
