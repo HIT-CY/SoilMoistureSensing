@@ -1,6 +1,6 @@
 # SoilMoistureSensing
 本实验旨在用FMCW雷达信号来对土壤的湿度信息进行测量。
--------------
+===================================
 ## Device Info
 本实验采用IWR6843isk开发板和DCA1000EVM采集卡，在mmWaveStudio平台上收集雷达数据。<br>
 IWR6843isk的工作频率为60GHz到64GHz，最多可以设置3发4收，实验里使用1发4收。<br>
@@ -20,4 +20,6 @@ ar1.FrameConfig函数用于设置雷达帧的参数，例如帧的数目、一�
 **参数设置过程碰到的问题**<br>
 问题1：shell中显示adc_bin被占用<br>
 导致此问题的原因是对adc_bin文件同时进行读写的冲突<br>
-解决方法，修改lua脚本中ar1.StartFrame()后面RSTD.Sleep()休眠的时间，以实现采集完数据再执行ar1.StartMatlabPostProc函数<br>
+解决方法：修改lua脚本中ar1.StartFrame()后面RSTD.Sleep()休眠的时间，以实现采集完数据再执行ar1.StartMatlabPostProc函数<br>
+
+## Experiment
