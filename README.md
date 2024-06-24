@@ -26,8 +26,8 @@ ar1.FrameConfig函数用于设置雷达帧的参数，例如帧的数目、一�
 ## Experiment
 
 **将反射板（不锈钢板10cm*10cm*1mm）埋在离桶底部10cm处，如图所示**<br>
-<img src="https://github.com/HIT-CY/SoilMoistureSensing/blob/master/Imag/%E5%8F%8D%E5%B0%84%E6%9D%BF1.jpg" width="300px"><br>
-<img src="https://github.com/HIT-CY/SoilMoistureSensing/blob/master/Imag/%E5%8F%8D%E5%B0%84%E6%9D%BF2.jpg" width="300px"><br>
+<img src="https://github.com/HIT-CY/SoilMoistureSensing/blob/master/Imag/%E5%8F%8D%E5%B0%84%E6%9D%BF1.jpg" width="300px">
+<img src="https://github.com/HIT-CY/SoilMoistureSensing/blob/master/Imag/%E5%8F%8D%E5%B0%84%E6%9D%BF2.jpg" width="300px">
 <img src="https://github.com/HIT-CY/SoilMoistureSensing/blob/master/Imag/%E5%8F%8D%E5%B0%84%E6%9D%BF%E4%BF%AF%E8%A7%86.jpg" width="300px"><br>
 
 **往不锈钢板上埋土，使土壤表明距不锈钢10cm，土壤总深度为20cm，如图所示**<br>
