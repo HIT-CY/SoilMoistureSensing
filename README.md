@@ -50,3 +50,17 @@ ar1.FrameConfig函数用于设置雷达帧的参数，例如帧的数目、一�
 土壤湿度采用谷物水分测定仪LDS-1G进行测量，测量误差在0.5%以内，湿度信息为25.8%。<br>
 
 ## Data Processing
+**adc_data1**
+adc_data1:Slope为29.982MH/us，离土壤表面高度为50cm。
+对adc_data1进行rangeFFT后，发现信号最强的地方是在6.64m附近，峰值为3.16e6，其他地方的信号峰值均小于1.6e4，远小于峰值。<br>
+<img src="https://github.com/HIT-CY/SoilMoistureSensing/blob/master/Imag/adc_data1_range.png" width="300px"><br>
+
+**adc_data4**
+adc_data4:Slope为59.997MH/us，离土壤表面高度为50cm。
+对adc_data4进行rangeFFT后，与adc_data1结果类似。<br>
+<img src="https://github.com/HIT-CY/SoilMoistureSensing/blob/master/Imag/adc_data4_range.png" width="300px"><br>
+
+**adc_data8**
+adc_data4:Slope为59.997MH/us，离土壤表面高度为24cm。
+对adc_data8进行rangeFFT后，与adc_data1、4结果类似。<br>
+<img src="https://github.com/HIT-CY/SoilMoistureSensing/blob/master/Imag/adc_data8_range.png" width="300px"><br>
