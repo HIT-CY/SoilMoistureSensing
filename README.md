@@ -72,3 +72,6 @@ Slope为59.997MHz/us，离土壤表面高度为24cm。<br>
 为什么在6.64m附近会有一个远高于其他地方的峰值存在。<br>
 实验验证：在实验室环境下进行采集，得到的结果图如下所示，仍没有发生变化，排除环境因素的干扰。<br>
 <img src="https://github.com/HIT-CY/SoilMoistureSensing/blob/master/Imag/adc_data11_range.png" width="600px"><br>
+
+**DOA估计算法**<br>
+常见的DOA估计算法有3DFFT、DBF（CBF）、capon（MVDR，最小方差无畸变算法）、MUSIC、ESPRIT、DML(最大似然法)、OMP(Orthogonal Matching Pursuit，正交匹配追踪算法)、IAA(Iterative Adaptive Approach，迭代自适应法)。[DOA算法综述](https://blog.csdn.net/xhblair/article/details/128893343?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522171957480616800225585374%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&request_id=171957480616800225585374&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_ecpm_v1~hot_rank-12-128893343-null-null.142^v100^pc_search_result_base4&utm_term=%E9%9B%B7%E8%BE%BEDBF%E6%B5%8B%E8%A7%92&spm=1018.2226.3001.4187)<br>
