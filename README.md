@@ -53,6 +53,7 @@ ar1.FrameConfig函数用于设置雷达帧的参数，例如帧的数目、一�
 土壤湿度采用谷物水分测定仪LDS-1G进行测量，测量误差在0.5%以内，湿度信息为25.8%。<br>
 
 ## Data Processing
+### 2024.6.23
 **adc_data1**<br>
 Slope为29.982MHz/us，离土壤表面高度为50cm。<br>
 对adc_data1进行rangeFFT后，发现信号最强的地方是在6.64m附近，峰值为3.16e6，其他地方的信号峰值均小于1.6e4，远小于峰值。<br>
@@ -72,6 +73,14 @@ Slope为59.997MHz/us，离土壤表面高度为24cm。<br>
 为什么在6.64m附近会有一个远高于其他地方的峰值存在。<br>
 实验验证：在实验室环境下进行采集，得到的结果图如下所示，仍没有发生变化，排除环境因素的干扰。<br>
 <img src="https://github.com/HIT-CY/SoilMoistureSensing/blob/master/Imag/adc_data11_range.png" width="600px"><br>
+
+### 2024.7.5
+用mmwave_demo_visualizer直接处理雷达板上的数据(不需要连接DCA1000EVM)，结果如下。<br>
+<img src="https://github.com/HIT-CY/SoilMoistureSensing/blob/master/Imag/mmwave_demo_visualizer.png" width="600px"><br>
+雷达板能正常读取数据，问题只可能出现在DCA1000EVM和mmwave studio的使用上。<br>
+
+### 2024.7.8
+查看官方提供的Lua脚本，发现ar1.EnableTestSource(1)函数会启动雷达生成仿真数据的功能，会影响数据采集的结果，关闭后即可正常采集数据。<br>
 
 **DOA估计算法**<br>
 常见的DOA估计算法有3DFFT、DBF（CBF）、capon（MVDR，最小方差无畸变算法）、MUSIC、ESPRIT、DML(最大似然法)、OMP(Orthogonal Matching Pursuit，正交匹配追踪算法)、IAA(Iterative Adaptive Approach，迭代自适应法)。[DOA算法综述](https://blog.csdn.net/xhblair/article/details/128893343?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522171957480616800225585374%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&request_id=171957480616800225585374&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_ecpm_v1~hot_rank-12-128893343-null-null.142^v100^pc_search_result_base4&utm_term=%E9%9B%B7%E8%BE%BEDBF%E6%B5%8B%E8%A7%92&spm=1018.2226.3001.4187)<br>
