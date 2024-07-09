@@ -94,7 +94,7 @@ Slope为59.997MHz/us，离土壤表面高度为24cm。<br>
 雷达板距离土壤表面30cm处，离地面50cm处。<br>
 **adc_data30_1_环境**<br>
 从图中可以看到，峰值最高点为58cm，而实际雷达距离地面为50cm，与前面的结果类似。<br>
-<img src="https://github.com/HIT-CY/SoilMoistureSensing/blob/master/Imag/2024_7_7/adc30_1_%E7%8E%AF%E5%A2%83.png" width="600px"><br>
+<img src="https://github.com/HIT-CY/SoilMoistureSensing/blob/master/Imag/2024_7_7/adc_data30_1_%E7%8E%AF%E5%A2%83.png" width="600px"><br>
 
 **adc_data30_7**<br>
 放置土壤，从图中可以看到，在29cm处有个波峰，对应土壤表面，在39cm处有个波峰，对应土壤中的铝板。68cm处有个波峰，这个波峰在环境采集中就存在，但峰值出现衰弱。<br>
