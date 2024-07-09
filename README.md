@@ -92,6 +92,16 @@ Slope为59.997MHz/us，离土壤表面高度为24cm。<br>
 <img src="https://github.com/HIT-CY/SoilMoistureSensing/blob/master/Imag/2024_7_7/adc_data50_8.png" width="600px"><br>
 
 雷达板距离土壤表面30cm处，离地面50cm处。<br>
-<img src="https://github.com/HIT-CY/SoilMoistureSensing/blob/master/Imag/2024_7_7/adc_data50_8.png" width="600px"><br>
+**adc_data30_1_环境**<br>
+从图中可以看到，峰值最高点为58cm，而实际雷达距离地面为50cm，与前面的结果类似。<br>
+<img src="https://github.com/HIT-CY/SoilMoistureSensing/blob/master/Imag/2024_7_7/adc30_1_%E7%8E%AF%E5%A2%83.png" width="600px"><br>
+
+**adc_data30_7**<br>
+放置土壤，从图中可以看到，在29cm处有个波峰，对应土壤表面，在39cm处有个波峰，对应土壤中的铝板。68cm处有个波峰，这个波峰在环境采集中就存在，但峰值出现衰弱。<br>
+<img src="https://github.com/HIT-CY/SoilMoistureSensing/blob/master/Imag/2024_7_7/adc_data30_7.png" width="600px"><br>
+
+**问题**<br>
+数据的距离分辨率不够，影响对雷达数据的分析，需要调整雷达参数。<br>
+
 **DOA估计算法**<br>
 常见的DOA估计算法有3DFFT、DBF（CBF）、capon（MVDR，最小方差无畸变算法）、MUSIC、ESPRIT、DML(最大似然法)、OMP(Orthogonal Matching Pursuit，正交匹配追踪算法)、IAA(Iterative Adaptive Approach，迭代自适应法)。[DOA算法综述](https://blog.csdn.net/xhblair/article/details/128893343?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522171957480616800225585374%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&request_id=171957480616800225585374&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_ecpm_v1~hot_rank-12-128893343-null-null.142^v100^pc_search_result_base4&utm_term=%E9%9B%B7%E8%BE%BEDBF%E6%B5%8B%E8%A7%92&spm=1018.2226.3001.4187)<br>
