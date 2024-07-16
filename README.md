@@ -103,5 +103,18 @@ Slope为59.997MHz/us，离土壤表面高度为24cm。<br>
 **问题**<br>
 数据的距离分辨率不够，影响对雷达数据的分析，需要调整雷达参数。<br>
 
+### 2024.7.13
+修改雷达参数，提高距离分辨率至0.039m。在rangeFFT时补零，进一步提高视觉分辨率，使数据看上去更加平滑。<br>
+**adc_data50_1_环境**<br>
+提高距离分辨率后，谱峰仍在0.77m附近，0.71m附近的谱峰远小于0.77m处谱峰，与实际情况存在一点偏差。<br>
+<img src="https://github.com/HIT-CY/SoilMoistureSensing/blob/master/Imag/20240713/20240713_adc_data50_1.png" width="600px"><br>
+
+### MVDR算法实现
+**坐标系角的概念**
+broadside angle 舷侧角<br>
+azimuth angle 方位角<br>
+elevation angle 俯仰角<br>
+[坐标系下对应的角](https://ww2.mathworks.cn/help/phased/ug/spherical-coordinates.html#bsl6_dn) [matlab函数](https://ww2.mathworks.cn/help/releases/R2021a/phased/ref/broadside2az.html#bvi4q8m-4)<br>
+
 **DOA估计算法**<br>
 常见的DOA估计算法有3DFFT、DBF（CBF）、capon（MVDR，最小方差无畸变算法）、MUSIC、ESPRIT、DML(最大似然法)、OMP(Orthogonal Matching Pursuit，正交匹配追踪算法)、IAA(Iterative Adaptive Approach，迭代自适应法)。[DOA算法综述](https://blog.csdn.net/xhblair/article/details/128893343?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522171957480616800225585374%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&request_id=171957480616800225585374&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_ecpm_v1~hot_rank-12-128893343-null-null.142^v100^pc_search_result_base4&utm_term=%E9%9B%B7%E8%BE%BEDBF%E6%B5%8B%E8%A7%92&spm=1018.2226.3001.4187)<br>
