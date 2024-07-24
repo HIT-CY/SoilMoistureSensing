@@ -119,12 +119,15 @@ Slope为59.997MHz/us，离土壤表面高度为24cm。<br>
 
 **adc_data50_1_4环境**<br>
 可以看到环境的信号还是比较干净的，在tof=5.07ns处有个谱峰，对应range=0.76m，地面距离雷达实际距离为0.69m，两者的误差为雷达板的硬件误差大约为0.07m。<br>
+<img src="https://github.com/HIT-CY/SoilMoistureSensing/blob/master/Imag/20240723/adcdata50_1_4%E7%8E%AF%E5%A2%83.png" width="600px"><br>
 
 **adc_data50_2_4铝板土壤上**<br>
 可以发现tof=3.78ns处有个谱峰，对应range=0.567m，土壤表面距离雷达实际距离为0.5m，两者的误差和上述误差基本一致。其次可以发现tof=5.07的谱峰明显变小，说明来自地面的反射信号减小很多。<br>
+<img src="https://github.com/HIT-CY/SoilMoistureSensing/blob/master/Imag/20240723/adcdata50_2_4%E9%93%9D%E6%9D%BF%E5%9C%9F%E5%A3%A4%E4%B8%8A.png" width="600px"><br>
 
 **adc_data50_3_4**<br>
 如下图所示，只留意broadside angle在0附近的谱峰，tof=3.908ns对应土壤表面，下一个谱峰在tof=4.414ns处，对应土壤下4cm铝板的反射信号，根据tof的差值计算得到土壤湿度vwc=2.247%，实际土壤湿度为1.822%。<br>
+<img src="https://github.com/HIT-CY/SoilMoistureSensing/blob/master/Imag/20240723/adcdata50_3_4.png" width="600px"><br>
 
 ### MVDR算法实现
 **坐标系角的概念**<br>
