@@ -126,7 +126,7 @@ Slope为59.997MHz/us，离土壤表面高度为24cm。<br>
 <img src="https://github.com/HIT-CY/SoilMoistureSensing/blob/master/Imag/20240723/adcdata50_2_4%E9%93%9D%E6%9D%BF%E5%9C%9F%E5%A3%A4%E4%B8%8A.png" width="600px"><br>
 
 **adc_data50_3_4**<br>
-如下图所示，只留意broadside angle在0附近的谱峰，tof=3.908ns对应土壤表面，下一个谱峰在tof=4.414ns处，对应土壤下4cm铝板的反射信号，根据tof的差值计算得到土壤湿度vwc=2.247%，实际土壤湿度为1.822%。<br>
+如下图所示，只留意broadside angle在0附近的谱峰，tof=3.908ns对应土壤表面，下一个谱峰在tof=4.414ns处，对应土壤下4cm铝板的反射信号，根据tof的差值计算得到土壤湿度vwc=4.521%，实际土壤湿度为1.822%。<br>
 <img src="https://github.com/HIT-CY/SoilMoistureSensing/blob/master/Imag/20240723/adcdata50_3_4.png" width="600px"><br>
 
 ### MVDR算法实现
